@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Survey Form</title>
         <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -50,7 +50,8 @@
                         <option>Night</option>
                     </select>
                 </label>
-                <label id="radio-label">Would you recommend Kankyō Ongaku to a friend/family member?
+                <div id="radio-div">
+                    Would you recommend Kankyō Ongaku to a friend/family member?
                     <label for="definitely">
                         <input
                             name="radio-option"
@@ -69,8 +70,7 @@
                             value="maybe"
                             type="radio"
                         />
-                        Maybe
-                        
+                        Maybe 
                     </label>
                     <label for="not-sure">
                         <input
@@ -81,7 +81,7 @@
                         />
                         Not Sure
                     </label>
-                </label>
+                </div>
                 <label id="checkbox-label">What would you like to see improved? (Check all that apply)
                     <label for="productivity">
                         <input id="productivity" type="checkbox" value="1">Productivty</input>
