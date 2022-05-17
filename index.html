@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Kankyō Ongaku</h1>
+        <p id="description">完全ナ意識ヲ達成スル</p>
+        <form id="survey-form" action="https://www.freecodecamp.org/">
+            <fieldset>
+                <label id="name-label"
+                    >Name<input
+                        id="name"
+                        type="text"
+                        required
+                        placeholder="Enter your name"
+                    />
+            
+                </label>
+                <label id="email-label"
+                    >Email<input
+                        id="email"
+                        type="email"
+                        required
+                        placeholder="Enter your Email"
+                    />
+                </label>
+            
+                <label id="number-label"
+                    >Age (optional)
+                    <input
+                        id="number"
+                        type="number"
+                        min="13"
+                        max="120"
+                        placeholder="Age"
+                    />
+                </label>
+            </fieldset>
+            <fieldset>
+                <label id="dropdown-label"
+                    >When do you mostly listen to Kankyō Ongaku?
+                    <select id="dropdown">
+                        <option selected disabled>Select an option</option>
+                        <option>Morning</option>
+                        <option>Noon</option>
+                        <option>Night</option>
+                    </select>
+                </label>
+                <label id="radio-label">Would you recommend Kankyō Ongaku to a friend/family member?
+                    <label for="definitely">
+                        <input
+                            name="radio-option"
+                            id="definitely"
+                            value="definitely"
+                            type="radio"
+                            checked
+                        />
+                        Definitely
+                    </label>
+
+                    <label for="maybe">
+                        <input
+                            name="radio-option"
+                            id="maybe"
+                            value="maybe"
+                            type="radio"
+                        />
+                        Maybe
+                        
+                    </label>
+                    <label for="not-sure">
+                        <input
+                            name="radio-option"
+                            id="not-sure"
+                            value="not-sure"
+                            type="radio"
+                        />
+                        Not Sure
+                    </label>
+                </label>
+                <label id="checkbox-label">What would you like to see improved? (Check all that apply)
+                    <label for="productivity">
+                        <input id="productivity" type="checkbox" value="1">Productivty</input>
+                    </label>
+                    <label for="routine">
+                        <input id="routine" type="checkbox" value="2">Routine</input>
+                    </label>
+                    <label for="relationships">
+                        <input id="relationships" type="checkbox" value="3">Relationships</input>
+                    </label>
+                    <label for="emotions">
+                        <input id="emotions" type="checkbox" value="4">Emotions</input>
+                    </label>
+                    <label for="resilience">
+                        <input id="resilience" type="checkbox" value="5">Resilience</input>
+                    </label>
+                    <label for="body">
+                        <input id="body" type="checkbox" value="6">Body</input>
+                    </label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label id="comments">Any comments or suggestions?
+                    <textarea placeholder="Enter your comment here..." rows="3" cols="30" ></textarea>
+                </label>
+                <button type="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

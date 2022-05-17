@@ -1,0 +1,57 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #333;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 635px;
+    min-width: 300px;
+    width: 80vw;
+    background-color: black;
+    border-radius: 0.3rem;
+    padding: 2.5rem;
+}
+
+fieldset {
+    border: 0;
+    margin: auto 0;
+    padding: 0px;
+    
+}
+
+label {
+    display: block;
+    margin: 0 0 8px 0;
+
+}
+
+input, textarea {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 6px 0;
+    border-radius: 6px;
+    text-align: start;
+}
+
+select {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 6px 0;
+    border-radius: 6px;
+    text-align: start;
+}
+
+
