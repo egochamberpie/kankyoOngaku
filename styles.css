@@ -8,10 +8,10 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
-    background-image: url("/img/backgroundvers2.jpg");
     /*
-    background-image: url("../img/backgroundvers2.jpg");
+    background-image: url("/img/backgroundvers2.jpg");
     */
+    background-image: url("https://github.com/egochamberpie/kankyoOngaku/blob/c0228eb7c4b1f7b8ec415725d5d55e8f7311e09b/img/backgroundvers2.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
