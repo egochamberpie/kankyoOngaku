@@ -4,33 +4,41 @@
         <title>Survey Form</title>
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <meta charset="utf-8" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="kankyoongaku.jpg" rel="icon" type="image/x-icon" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <h1 id="title">Kankyō Ongaku</h1>
         <p id="description">完全ナ意識ヲ達成スル</p>
-        <form id="survey-form" action="https://www.freecodecamp.org/">
+        <form id="survey-form" action="#">
             <fieldset>
-                <label id="name-label"
-                    >Name<input
+                <div id="name-div">
+                    <div id="name-section">Name</div>
+                    <input
                         id="name"
                         type="text"
                         required
                         placeholder="Enter your name"
                     />
-            
-                </label>
-                <label id="email-label"
-                    >Email<input
+                </div>
+                <div id="email-div">
+                    <div id="email-section">Email</div>
+                    <input
                         id="email"
                         type="email"
                         required
                         placeholder="Enter your Email"
                     />
-                </label>
-            
-                <label id="number-label"
-                    >Age (optional)
+                </div>
+
+                <div id="number-div">
+                    <div id="number-section">
+                        Age
+                        <div id="strongs">(optional)</div>
+                    </div>
                     <input
                         id="number"
                         type="number"
@@ -38,18 +46,22 @@
                         max="120"
                         placeholder="Age"
                     />
-                </label>
+                </div>
             </fieldset>
             <fieldset>
-                <label id="dropdown-label"
-                    >When do you mostly listen to Kankyō Ongaku?
-                    <select id="dropdown">
-                        <option selected disabled>Select an option</option>
-                        <option>Morning</option>
-                        <option>Noon</option>
-                        <option>Night</option>
+                <div id="dropdown-div">
+                    <div id="dropdown-section">
+                        When do you mostly listen to Kankyō Ongaku?
+                    </div>
+                    <select id="dropdown" required>
+                        <option id="first-option" selected value="" disabled>
+                            &nbsp; Select an option
+                        </option>
+                        <option>&nbsp; Morning</option>
+                        <option>&nbsp; Noon</option>
+                        <option>&nbsp; Night</option>
                     </select>
-                </label>
+                </div>
                 <div id="radio-div">
                     Would you recommend Kankyō Ongaku to a friend/family member?
                     <label for="definitely">
@@ -70,8 +82,9 @@
                             value="maybe"
                             type="radio"
                         />
-                        Maybe 
+                        Maybe
                     </label>
+
                     <label for="not-sure">
                         <input
                             name="radio-option"
@@ -81,32 +94,65 @@
                         />
                         Not Sure
                     </label>
+
+                    <label for="never">
+                        <input
+                            name="radio-option"
+                            id="never"
+                            value="never"
+                            type="radio"
+                        />
+                        Never
+                    </label>
                 </div>
-                <label id="checkbox-label">What would you like to see improved? (Check all that apply)
+                <div id="checkbox-div">
+                    What would you like to see improved?
+                    <div id="strong">(Check all that apply)</div>
                     <label for="productivity">
-                        <input id="productivity" type="checkbox" value="1">Productivty</input>
+                        <input
+                            id="productivity"
+                            type="checkbox"
+                            value="1"
+                        />Productivty
                     </label>
                     <label for="routine">
-                        <input id="routine" type="checkbox" value="2">Routine</input>
+                        <input id="routine" type="checkbox" value="2" />Routine
                     </label>
                     <label for="relationships">
-                        <input id="relationships" type="checkbox" value="3">Relationships</input>
+                        <input
+                            id="relationships"
+                            type="checkbox"
+                            value="3"
+                        />Relationships
                     </label>
                     <label for="emotions">
-                        <input id="emotions" type="checkbox" value="4">Emotions</input>
+                        <input
+                            id="emotions"
+                            type="checkbox"
+                            value="4"
+                        />Emotions
                     </label>
                     <label for="resilience">
-                        <input id="resilience" type="checkbox" value="5">Resilience</input>
+                        <input
+                            id="resilience"
+                            type="checkbox"
+                            value="5"
+                        />Resilience
                     </label>
                     <label for="body">
-                        <input id="body" type="checkbox" value="6">Body</input>
+                        <input id="body" type="checkbox" value="6" />Body
                     </label>
-                </label>
+                </div>
             </fieldset>
             <fieldset>
-                <label id="comments">Any comments or suggestions?
-                    <textarea placeholder="Enter your comment here..." rows="3" cols="30" ></textarea>
-                </label>
+                <div id="textarea-div">
+                    Any comments or suggestions?
+                    <textarea
+                        placeholder="Enter your comment here..."
+                        rows="6"
+                        cols="30"
+                    ></textarea>
+                </div>
                 <button type="submit" id="submit">Submit</button>
             </fieldset>
         </form>
